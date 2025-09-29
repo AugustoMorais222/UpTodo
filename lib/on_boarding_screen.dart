@@ -18,17 +18,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     {
       'title': 'Organize suas tarefas',
       'subtitle': 'Crie listas e mantenha o foco no que importa.',
-      'image': 'assets/onboarding1.png'
+      'image': '../assets/onboard-001.png'
     },
     {
       'title': 'Crie rotinas diárias',
       'subtitle': 'Defina hábitos saudáveis e cumpra suas metas.',
-      'image': 'assets/onboarding2.png'
+      'image': '../assets/onboard-002.png'
     },
     {
       'title': 'Acompanhe seu progresso',
       'subtitle': 'Visualize seu desempenho e conquistas.',
-      'image': 'assets/onboarding3.png'
+      'image': '../assets/onboard-003.png'
     },
   ];
 
@@ -44,6 +44,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Stack(
         children: [
           PageView.builder(
@@ -102,6 +103,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     style: const TextStyle(fontSize: 18, color: Colors.white),
                   ),
                 ),
+                Container( height: 10),
                 ElevatedButton(
                   onPressed: () => {
                     _finishOnboarding()

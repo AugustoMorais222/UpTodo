@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:uptodo/on_boarding_screen.dart';
-import 'package:uptodo/splash_page.dart';
-import 'package:uptodo/home_page.dart';
+import 'category_page.dart';
+import 'on_boarding_screen.dart';
+import 'reset_password.dart';
+import 'splash_page.dart';
 import 'home_page.dart';
 import 'login.dart';
+import 'register.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +29,9 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginPage(),
         '/home': (context) => HomePage(),
         '/on_boarding': (context) => OnboardingScreen(),
+        '/category': (context) => CategoryPage(),
+        '/register': (context) => RegisterPage(),
+        '/reset_password': (context) => ResetPasswordPage(),
       },
     );
   }
